@@ -39,17 +39,23 @@ const Links = styled.div`
 export const Hotelist = () => {
     const { t } = useTranslation();
     const [list, setList] = useState([]);
+    const [sliceList, setSliceList] = useState([])
     const [err, setErr] = useState('');
     const [loader, setLoader] = useState(true)
 
     useEffect(() => {
         apiCalls.getHotels().then(data => {
             setList(data);
+            setSliceList(data.slice(0, 3));
             setLoader(false);
         }).catch( err => {
             setErr(err.message);
         });
     }, [])
+
+    const loadMore = () => {
+        setSliceList(list);
+    }
 
     return (
         <TopSection>
@@ -62,10 +68,10 @@ export const Hotelist = () => {
                 <Flex>
                     <BigFilter/>
                     <HotelistItems>
-                        {loader && err ? <Loader/>  : list.map(el => (
+                        {loader || err ? <Loader/>  : sliceList.map(el => (
                             <List id={el.id} image={`/assets/img/${el.photo}`} name={el.name} price={`$${el.price}`} rating={el.rating} reviews={el.reviews} location={el.location} />
                         ))}
-                        <View><i className="icon-loader"></i> {t('viewAll')}</View>
+                        <View onClick={loadMore}><i className="icon-loader"></i> {t('viewAll')}</View>
                     </HotelistItems>
                 </Flex>
             </BigContainer>

@@ -120,7 +120,6 @@ export const Details = () => {
                     <Map><Icon className="icon-map"></Icon>{hotel.location}</Map>
                 </Flex>
                 <HotelImg src={`/assets/img/${hotel.photo}`} style={{width: '100%'}} alt="" />
-                {/* <DetailsGrid/> */}
                 <Infos>
                     <Info1>5.0</Info1>
                     <Info2>{t('perfect')}</Info2>
