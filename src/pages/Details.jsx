@@ -1,5 +1,4 @@
 import React from 'react'
-import { DetailsGrid } from '../components/DetailsGrid'
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components'
 import { Bread, Container, Row, ThisPage } from '../styled'

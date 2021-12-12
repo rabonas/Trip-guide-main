@@ -55,7 +55,7 @@ export const Hotelist = () => {
 
     const loadMore = (e) => {
         setSliceList(list);
-        e.target.style.display = 'none'
+        e.target.style.display = 'none';
     }
 
     return (
