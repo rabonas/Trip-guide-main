@@ -86,22 +86,22 @@ export const BigFilter = () => {
                 <SearchTitle>{t('popFilter')}</SearchTitle>
 
                 <Flex className="margin">
-                    <Checkbox type="checkbox" id="hotels" value='hotels' onChange={handleCheck} />
+                    <Checkbox type="checkbox" id="hotels" value='Hotels' onChange={handleCheck} />
                     <Label htmlFor="hotels">{t('hotels')}</Label>
                 </Flex>
 
                 <Flex className="margin">
-                    <Checkbox type="checkbox" id="breakfast" value='breakfast' onChange={handleCheck} />
+                    <Checkbox type="checkbox" id="breakfast" value='Breakfast and Dinner' onChange={handleCheck} />
                     <Label htmlFor="breakfast">{t('breakfast')}</Label>
                 </Flex>
 
                 <Flex className="margin">
-                    <Checkbox type="checkbox" id="cancell" value='cancell' onChange={handleCheck}  />
+                    <Checkbox type="checkbox" id="cancell" value='Free Cancellation' onChange={handleCheck}  />
                     <Label htmlFor="cancell">{t('cancell')}</Label>
                 </Flex>
 
                 <Flex className="margin">
-                    <Checkbox type="checkbox" id="NoPrepayment" value='NoPrepayment' onChange={handleCheck}  />
+                    <Checkbox type="checkbox" id="NoPrepayment" value='No prepayment' onChange={handleCheck}  />
                     <Label htmlFor="NoPrepayment">{t('prepay')}</Label>
                 </Flex>
                 
@@ -111,7 +111,7 @@ export const BigFilter = () => {
             <Checks>
                 <SearchTitle>{t('priceRange')}</SearchTitle>
                 <Row className="margin">
-                    <input style={{width: '65%'}} type="range" onChange={(e) => setRange(e.target.value)} />
+                    <input style={{width: '65%'}} type="range" onChange={(e) => {setRange(e.target.value); console.log(e.target.value)}} />
                     <RangeInp type="number" value={range} />
                 </Row>
                 <Row>
@@ -124,21 +124,21 @@ export const BigFilter = () => {
                 <SearchTitle>{t('property')}</SearchTitle>
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="hotel" value='hotels' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="hotel" value='Hotels' onChange={handleCheck}/>
                         <Label htmlFor="hotel">{t('hotels')}</Label>
                     </Flex>
                     <Sum>108</Sum>
                 </Row>
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="apartment" value='apartment' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="apartment" value='Apertments' onChange={handleCheck}/>
                         <Label htmlFor="apartment">{t('apartment')}</Label>
                     </Flex>
                     <Sum>141</Sum>
                 </Row>
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="resort" value='resort' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="resort" value='Resort' onChange={handleCheck}/>
                         <Label htmlFor="resort">{t('resort')}</Label>
                     </Flex>
                     <Sum>108</Sum>
@@ -181,42 +181,42 @@ export const BigFilter = () => {
 
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="outdoor" value='outdoor' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="outdoor" value='Outdoor Sports' onChange={handleCheck}/>
                         <Label htmlFor="outdoor">{t('outdoor')}</Label>
                     </Flex>
                     <Sum>108</Sum>
                 </Row>
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="berbeque" value='berbeque' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="berbeque" value='Berbeque' onChange={handleCheck}/>
                         <Label htmlFor="berbeque">{t('berbeque')}</Label>
                     </Flex>
                     <Sum>141</Sum>
                 </Row>
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="living" value='living room' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="living" value='Living Room' onChange={handleCheck}/>
                         <Label htmlFor="living">{t('living')}</Label>
                     </Flex>
                     <Sum>108</Sum>
                 </Row>
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="roomSer" value='room Service' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="roomSer" value='Room Service' onChange={handleCheck}/>
                         <Label htmlFor="roomSer">{t('roomSer')}</Label>
                     </Flex>
                     <Sum>108</Sum>
                 </Row>
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="swimming" value='swimming' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="swimming" value='Swimming Pool' onChange={handleCheck}/>
                         <Label htmlFor="swimming">{t('swimming')}</Label>
                     </Flex>
                     <Sum>141</Sum>
                 </Row>
                 <Row className="margin">
                     <Flex>
-                        <Checkbox type="checkbox" id="spa" value='spa' onChange={handleCheck}/>
+                        <Checkbox type="checkbox" id="spa" value='Spa' onChange={handleCheck}/>
                         <Label htmlFor="spa">{t('spa')}</Label>
                     </Flex>
                     <Sum>108</Sum>
