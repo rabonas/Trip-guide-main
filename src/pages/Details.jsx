@@ -134,7 +134,7 @@ export const Details = () => {
                     </span>
                 </Infos>
                 <Row>
-                    <AboutList/>
+                    <AboutList location={hotel.location} />
                     <CardPrice price={hotel.price} id={hotel.id}/>
                 </Row>
             </Container>

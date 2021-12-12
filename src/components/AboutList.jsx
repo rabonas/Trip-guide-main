@@ -78,12 +78,12 @@ const More = styled.button`
     font-size: 16px;
 `
 
-export const AboutList = () => {
+export const AboutList = ({location}) => {
     const { t } = useTranslation()
     return (
         <About>
             <ListTitle>{t('exclusive')}</ListTitle>
-            <City>{t('switzerland')}</City>
+            <City>{location}</City>
             <TabsDiv>
                 <Tabs>
                     <TabList>

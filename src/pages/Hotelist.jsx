@@ -39,9 +39,9 @@ const Links = styled.div`
 export const Hotelist = () => {
     const { t } = useTranslation();
     const [list, setList] = useState([]);
-    const [sliceList, setSliceList] = useState([])
+    const [sliceList, setSliceList] = useState([]);
     const [err, setErr] = useState('');
-    const [loader, setLoader] = useState(true)
+    const [loader, setLoader] = useState(true);
 
     useEffect(() => {
         apiCalls.getHotels().then(data => {
