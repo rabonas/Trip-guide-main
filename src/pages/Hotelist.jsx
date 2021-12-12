@@ -53,8 +53,9 @@ export const Hotelist = () => {
         });
     }, [])
 
-    const loadMore = () => {
+    const loadMore = (e) => {
         setSliceList(list);
+        e.target.style.display = 'none'
     }
 
     return (
