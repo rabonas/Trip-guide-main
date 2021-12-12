@@ -1,0 +1,33 @@
+{
+    "tours": [
+        { "id": 1, "name": "Japan", "place_count": 10,  "country": "Japan", "photo": "tour1.jpg" },
+        { "id": 2, "name": "Bali", "place_count": 10,  "country": "Indonesia", "photo": "tour2.jpg" },
+        { "id": 3, "name": "Spain", "place_count": 10,  "country": "Barcelona", "photo": "tour3.jpg" },
+        { "id": 4, "name": "Japan", "place_count": 10,  "country": "Japan", "photo": "tour1.jpg" },
+        { "id": 5, "name": "Japan", "place_count": 10,  "country": "Japan", "photo": "tour1.jpg" }
+    ],
+    "explore": [
+        { "id": 1, "title": "Comfort Space", "rating": "4.91 (147)", "price": 210, "location": "Turkey, Mamaris", "rooms": 375, "radius": "1.2 km", "image": "explore1.jpg" },
+        { "id": 2, "title": "Comfort Space", "rating": "4.91 (147)", "price": 210, "location": "Turkey, Mamaris", "rooms": 375, "radius": "1.2 km", "image": "explore1.jpg" },
+        { "id": 3, "title": "Comfort Space", "rating": "4.91 (147)", "price": 210, "location": "Turkey, Mamaris", "rooms": 375, "radius": "1.2 km", "image": "explore1.jpg" },
+        { "id": 4, "title": "Comfort Space", "rating": "4.91 (147)", "price": 210, "location": "Turkey, Mamaris", "rooms": 375, "radius": "1.2 km", "image": "explore1.jpg" },
+        { "id": 5, "title": "Comfort Space", "rating": "4.91 (147)", "price": 210, "location": "Turkey, Mamaris", "rooms": 375, "radius": "1.2 km", "image": "explore1.jpg" },
+        { "id": 6, "title": "Comfort Space", "rating": "4.91 (147)", "price": 210, "location": "Turkey, Mamaris", "rooms": 375, "radius": "1.2 km", "image": "explore1.jpg" }
+    ],
+    "cities": [
+        { "id": 1, "name": "Manila", "price": 250, "photo": "city1.jpg", "rating": "4.5 (36)" },
+        { "id": 2, "name": "San Francisco", "price": 250, "photo": "city2.jpg", "rating": "3.8 (116)" },
+        { "id": 3, "name": "Frankfurt main", "price": 250, "photo": "city3.jpg", "rating": "4.6 (98)" },
+        { "id": 4, "name": "Washington", "price": 250, "photo": "city4.jpg", "rating": "5 (3)" },
+        { "id": 5, "name": "Stockholm", "price": 250, "photo": "city5.jpg", "rating": "4.2 (36)" },
+        { "id": 6, "name": "Seattle", "price": 250, "photo": "city6.jpg", "rating": "4.8 (17)" }
+    ],
+    "hotels": [
+        { "id": 1, "name": "Гостиница Sahid Zarafshon", "rating": 4.0, "reviews": 7, "location": "Бухара, ул. М. Икбол, д. 4", "price": 58, "photo": "hotel1.jpg" },
+        { "id": 2, "name": "Гостиница Daniel Hill", "rating": 4.7, "reviews": 27, "location": "Ташкент, ул. Янги Куйлук, 18", "price": 75, "photo": "hotel2.jpg" },
+        { "id": 3, "name": "Гостиница Wyndham Tashkent", "rating": 4.5, "reviews": 283, "location": "Ташкент, ул. Амир Тимур, д. 7/8", "price": 150, "photo": "hotel3.jpg" },
+        { "id": 4, "name": "Simma Hotel Spa & Water Park", "rating": 3.7, "reviews": 9, "location": "Ташкент, ул. Навруз, 22", "price": 80, "photo": "hotel4.jpg" },
+        { "id": 5, "name": "Гостиница Qushbegi Plaza", "rating": 4.1, "reviews": 3, "location": "Ташкент, ул. Кушбеги, д. 6/1", "price": 85, "photo": "hotel5.jpg" },
+        { "id": 6, "name": "Гостиница Asia Bukhara", "rating": 3.8, "reviews": 373, "location": "Бухара, Ул. Мехтар Амбар, 55", "price": 45, "photo": "hotel6.jpg" }
+    ]
+}
